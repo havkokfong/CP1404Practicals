@@ -3,9 +3,13 @@ import random
 
 
 def main():
-    range = int(input("How many quick picks?"))
-    for i in range(1, range + 1):
-        numbers = random.randint(1, 45)
-        print(numbers)
+    ranges = int(input("How many quick picks?\n>>> "))
+    for j in range(1, ranges + 1):
+        for i in range(5):
+            numbers = random.randint(1, 45)
+        if i in numbers:
+            numbers = random.randint(1, 45)
+    print(numbers, end=" ")
+
 
 main()
