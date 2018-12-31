@@ -1,0 +1,11 @@
+
+from prac_08.silverservicetaxi import SilverServiceTaxi
+
+
+def main():
+    passenger = SilverServiceTaxi("Joe", 120, 5)
+    passenger.drive(50)
+    print(passenger)
+
+
+main()
